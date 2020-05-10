@@ -1,15 +1,12 @@
-#include <napi.h>
-
-// Screen
+// Screen imports
 #include "./screen/getAllScreens/getAllScreensExports.hh"
 #include "./screen/getScreenAtPoint/getScreenAtPointExports.hh"
 
-// Mouse
+// Mouse imports
 #include "./mouse/getMousePosition/getMousePositionExports.hh"
 
 Napi::Object InitAll(Napi::Env env, Napi::Object exports) {
-
-  // Screen
+  // Screen exports
   exports.Set(
     Napi::String::New(env, "getAllScreens"),
     Napi::Function::New(env, getAllScreensCallback)
@@ -19,7 +16,7 @@ Napi::Object InitAll(Napi::Env env, Napi::Object exports) {
     Napi::Function::New(env, getScreenAtPointCallback)
   );
 
-  // Mouse
+  // Mouse exports
   exports.Set(
     Napi::String::New(env, "getMousePosition"),
     Napi::Function::New(env, getMousePositionCallback)

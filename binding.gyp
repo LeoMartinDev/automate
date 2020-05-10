@@ -17,12 +17,12 @@
         #
         # SHARED
         #
+        "./cpp/screen/Screen.cc",
         "./cpp/shared/AppPoint/AppPoint.cc",
 
         #
         # SCREEN
         #
-        "./cpp/screen/Screen.cc",
         # getAllScreens
         "./cpp/screen/getAllScreens/getAllScreensFunctions.cc",
         "./cpp/screen/getAllScreens/GetAllScreensWorker.cc",
@@ -35,6 +35,7 @@
         #
         # MOUSE
         #
+        # getMousePosition
         "./cpp/mouse/getMousePosition/getMousePositionFunctions.cc",
         "./cpp/mouse/getMousePosition/GetMousePositionWorker.cc",
         "./cpp/mouse/getMousePosition/getMousePositionExports.cc",
