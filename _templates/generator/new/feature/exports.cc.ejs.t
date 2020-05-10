@@ -1,5 +1,5 @@
 ---
-to: cpp/<%= type %>/<%= feature %>Exports.cc
+to: cpp/<%= type %>/<%= feature %>/<%= feature %>Exports.cc
 ---
 <%
   workerName = h.changeCase.pascal(feature) + 'Worker';

@@ -1,5 +1,5 @@
 ---
-to: cpp/<%= type %>/<%= h.changeCase.pascal(feature) %>Worker.hh
+to: cpp/<%= type %>/<%= feature %>/<%= h.changeCase.pascal(feature) %>Worker.hh
 ---
 <%
   identifierToken = h.inflection.underscore(feature);

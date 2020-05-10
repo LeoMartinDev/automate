@@ -1,5 +1,5 @@
 ---
-to: cpp/<%= type %>/<%= feature %>Exports.hh
+to: cpp/<%= type %>/<%= feature %>/<%= feature %>Exports.hh
 ---
 <%
   identifierToken = h.inflection.underscore(feature);
